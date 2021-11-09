@@ -1,3 +1,5 @@
+from Borracho import BorrachoTradicional
+
 class Campo:
     def _init_(self):
         self.coordenadas_de_borrachos = {}
@@ -6,7 +8,7 @@ class Campo:
         self.coordenadas_de_borrachos[Borracho] = coordenada
     
     def mover_borracho(self, Borracho):
-        delta_x, delta_y = Boracho_camina()
+        delta_x, delta_y = Borracho.camina()
         coordenada_actual = self.coordenadas_de_borrachos[Borracho]
         nueva_coordenada = coordenada_actual.mover(delta_x,delta_y)
 
